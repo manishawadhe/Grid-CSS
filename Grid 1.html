@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>grid</title>
+     <style>
+        #key{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,50px);
+        gap: 10px;
+        width: 30%;
+        margin: auto;
+        background-color:white ;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 150px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        
+      }
+      #key > div{
+        background-color: #2e3639;
+        text-transform: uppercase;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #fr{
+        grid-column: 1/span 2;
+      }
+      #fd{
+        grid-column: 3/span 2;
+      }
+      #sr{
+        grid-column: 2/span 3;
+      }
+      #lr{
+        grid-column: 1/span 4;
+      }
+     </style>
+</head>
+<body>
+    <div id="key">
+        <div id="fr">A</div>
+        <div id="fd">B</div>
+        <div>C</div>
+        <div id="sr">D</div>
+        <div id="lr">E</div>
+    </div>
+</body>
+</html>

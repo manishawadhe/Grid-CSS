@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcutator</title>
+    <style>
+        #cal{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 5px;
+            width: 30%;
+            margin: auto;
+            background-color:whitesmoke ;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 150px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+            rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        
+
+        }
+        #cal >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        }
+        /* #cal > div:hover{
+        background-color: #01bdd5;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+      } */
+      #em{
+        grid-column: 1/span 4;
+      }
+      #clear{
+        background-color: Red;
+      }
+      #sym{
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <div id="em"></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div id="sym">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div id="sym">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div id="sym">x</div>
+        <div id="clear">c</div>
+        <div>0</div>
+        <div id="sym">=</div>
+        <div id="sym">/</div>
+    </div>
+</body>
+</html>

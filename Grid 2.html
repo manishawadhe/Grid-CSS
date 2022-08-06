@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid 2</title>
+    <style>
+       #key{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,50px);
+        gap: 10px;
+        width: 30%;
+        margin: auto;
+        background-color:white ;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 150px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          grid-template-areas:
+          "a a b e"
+          "c d b e" ;
+       } 
+       #key > div{
+        background-color: #2e3639;
+        text-transform: uppercase;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #key > div:nth-child(1){
+        grid-area: a;
+      }
+      #key > div:nth-child(2){
+        grid-area: b;
+      }
+      #key > div:nth-child(3){
+        grid-area: c;
+      }
+      #key > div:nth-child(4){
+        grid-area: d;
+      }
+      #key > div:nth-child(5){
+        grid-area: e;
+        height: 120px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div id="key">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>
